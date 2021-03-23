@@ -154,7 +154,64 @@ public class MusicDao {
         return 0; // 插入失败返回0
     }
 
-    // 删除
+    /**
+     * 删除歌曲：
+     */
+    public  int deleteMusicById(int id) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+       // ResultSet rs = null;    // 删除操作，不需要结果集
+        try {
+            String sql = "delete from music where id=?";
+            connection = DBUtils.getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1,id);
+            int ret = ps.executeUpdate(); //删除成功，返回值为1
+            // 若删除成功，还要判断这首歌是否被添加到lovemusic表单中
+            // 若lovemusic表单中有这首歌，就将这首歌从lovemusic中删除
+            if(ret == 1) {
+                // 判断中间表是否有这个数据
+                if(findLoveMusicOnDel(id)) {
+                    // if语句进来，说明LoveMusic中有这条数据，需要删除
+                    int ret2 = removeLoveMusicOnDel(id); // 若ret2为1，说明删除成功
+                    if(ret2 == 1) {
+                        return 1; // lovemusic表中的歌单删除成功
+                    }
+                }
+                return 1;  // 表示这首歌没有被添加到lovemusic这张表中
+            }
+        }catch (SQLException e) {
+            e.printStackTrace();
+
+        }finally {
+            DBUtils.getClose(connection,ps,null);
+        }
+        return 0;
+    }
+
+    // 根据id在LoveMusic表单中查询
+    private boolean findLoveMusicOnDel(int id) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+         ResultSet rs = null;
+        try {
+            String sql = "delete from lovemusic where id=?";
+            connection = DBUtils.getConnection();
+            ps = connection.prepareStatement(sql);
+            rs = ps.executeQuery();
+
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,ps,rs);
+        }
+        return false;
+    }
+    // 根据id删除LoveMusic表单中的歌单
+    private int removeLoveMusicOnDel(int id) {
+
+    }
 
 
     // 测试
