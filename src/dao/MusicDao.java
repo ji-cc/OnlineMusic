@@ -14,7 +14,7 @@ import java.util.List;
 public class MusicDao {
 
     // 查询全部歌单
-    public static List<Music> findMusic() {
+    public List<Music> findMusic() {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -47,7 +47,7 @@ public class MusicDao {
 
 
     // 根据 id  查找音乐
-    public static Music findMusicById (int id) {
+    public Music findMusicById (int id) {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -85,7 +85,7 @@ public class MusicDao {
 
     //根据关键字查询歌单
     // str 代表歌名
-    public static List<Music> ifMusic(String str) {
+    public List<Music> ifMusic(String str) {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -121,7 +121,7 @@ public class MusicDao {
      * a1:上传文件本身给服务器
      *a2:将音乐信息，插入到数据库当中，此时做的就是这一步
      */
-    public static int Insert(String title, String singer, String time, String url,
+    public int Insert(String title, String singer, String time, String url,
                       int userid) {
         Connection connection = null;
         PreparedStatement ps = null;
@@ -169,15 +169,15 @@ public class MusicDao {
             // 若删除成功，还要判断这首歌是否被添加到lovemusic表单中
             // 若lovemusic表单中有这首歌，就将这首歌从lovemusic中删除
             if(ret == 1) {
-                // 判断中间表是否有这个数据
-                if(findLoveMusicOnDel(id)) {
-                    // if语句进来，说明LoveMusic中有这条数据，需要删除
-                    int ret2 = removeLoveMusicOnDel(id); // 若ret2为1，说明删除成功
-                    if(ret2 == 1) {
-                        return 1; // lovemusic表中的歌单删除成功
-                    }
-                }
-                return 1;  // 表示这首歌没有被添加到lovemusic这张表中
+//                // 判断中间表是否有这个数据
+//                if(findLoveMusicOnDel(id)) {
+//                    // if语句进来，说明LoveMusic中有这条数据，需要删除
+//                    int ret2 = removeLoveMusicOnDel(id); // 若ret2为1，说明删除成功
+//                    if(ret2 == 1) {
+//                        return 1; // lovemusic表中的歌单删除成功
+//                    }
+//                }
+                return 1;  // 从music表单中删除成功
             }
         }catch (SQLException e) {
             e.printStackTrace();
@@ -188,47 +188,7 @@ public class MusicDao {
         return 0;
     }
 
-    // 根据id在LoveMusic表单中查询
-    private boolean findLoveMusicOnDel(int musicId) {  // music 表单中的id，对应于lovemusic表单中的music_id，所以应该上传musicId
-        Connection connection = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-            String sql = "select * from lovemusic where music_id=?";
-            connection = DBUtils.getConnection();
-            ps = connection.prepareStatement(sql);
-            ps.setInt(1,musicId);
-            rs = ps.executeQuery();
-            if(rs.next()) {
-                return true;
-            }
-        }catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            DBUtils.getClose(connection,ps,rs);
-        }
-        return false;
-    }
-    // 根据id删除LoveMusic表单中的歌单
-    private int removeLoveMusicOnDel(int id) {
-        Connection connection = null;
-        PreparedStatement ps = null;
-        try {
-            String sql = "delete from lovemusic where music_id=?";
-            connection = DBUtils.getConnection();
-            ps = connection.prepareStatement(sql);
-            ps.setInt(1,id);
-            int ret = ps.executeUpdate();
-            if(ret == 1) {
-                return 1;
-            }
-        }catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            DBUtils.getClose(connection,ps,null);
-        }
-        return 0;
-    }
+
 
 
     /**
@@ -266,7 +226,7 @@ public class MusicDao {
      * 多对多
      * 需要中间表
      */
-    public static boolean insertLoveMusic (int userId, int musicId) {
+    public boolean insertLoveMusic (int userId, int musicId) {
         Connection connection = null;
         PreparedStatement ps = null;
         // 没有用到 ResultSet
@@ -324,7 +284,7 @@ public class MusicDao {
      * @param user_id
      * @return
      */
-    public static List<Music> findLoveMusic(int user_id){
+    public List<Music> findLoveMusic(int user_id){
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -358,7 +318,7 @@ public class MusicDao {
         * @param str
         * @return
         */
-    public static List<Music> ifMusicLove(String str,int user_id){
+    public List<Music> ifMusicLove(String str,int user_id){
         List<Music> musics = new ArrayList<>();
         Connection connection = null;
         PreparedStatement ps = null;
@@ -392,10 +352,10 @@ public class MusicDao {
 
 
     // 测试   // 测试的时候要在方法名前加 static
-    public static void main(String[] args) {
-        // 根据关键字查询用户喜欢的音乐
-        List<Music> musicList = ifMusicLove("铁",1);
-        System.out.println(musicList);
+//    public static void main(String[] args) {
+//        // 根据关键字查询用户喜欢的音乐
+//        List<Music> musicList = ifMusicLove("铁",1);
+//        System.out.println(musicList);
 
 //        // 查询用户喜欢的音乐
 //        List<Music> musicList = findLoveMusic(1);
@@ -419,5 +379,5 @@ public class MusicDao {
 //
 //        // 添加音乐到“喜欢”列表中
 //        System.out.println(insertLoveMusic(1,2));
-    }
+//    }
 }
