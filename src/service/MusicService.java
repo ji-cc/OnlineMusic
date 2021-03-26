@@ -25,6 +25,7 @@ public class MusicService {
             }
             return 1;  // 执行到这一步，表示这首歌没有被添加到lovemusic这张表中，且在music表单中删除成功
         }
+        return 0;
     }
 
     // 根据id在LoveMusic表单中查询
