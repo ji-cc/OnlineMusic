@@ -11,13 +11,11 @@ import java.sql.SQLException;
 // 有关用户的数据库操作
 public class UserDao {
     // 登录
-    public static User login(User loginUser){
+    public User login(User loginUser){
         User user = null;
         Connection connection = null;   // 获取连接
         PreparedStatement ps = null;     // 预编译sql语句
         ResultSet rs = null;      // 从数据库拿到的结果集的集合
-
-
         try {
             String sql = "select * from user where  username =? and password=?";
             connection = DBUtils.getConnection();
@@ -48,14 +46,14 @@ public class UserDao {
     }
 
     // 测试
-    public static void main(String[] args) {
-        User user = new User();
-        user.setUsername("bit");
-        user.setPassword("123");
-        User loginUser = login(user);
-        System.out.println(loginUser);
-        // User{id=1, username='bit', password='123', gender='男', age=10, email='1262913815@qq.com'}
-    }
+//    public static void main(String[] args) {
+//        User user = new User();
+//        user.setUsername("bit");
+//        user.setPassword("123");
+//        User loginUser = login(user);
+//        System.out.println(loginUser);
+//        // User{id=1, username='bit', password='123', gender='男', age=10, email='1262913815@qq.com'}
+//    }
 
 }
 
