@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-// 加注解 可以让人更快的知道来到哪个路径下
+// 加注解  url:"/loginServlet", 与前端代码相关联
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
     /*  login.html

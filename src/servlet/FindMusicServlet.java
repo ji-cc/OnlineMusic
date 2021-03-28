@@ -11,14 +11,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 // 加注解
 @WebServlet("/findMusic")
 public class FindMusicServlet extends HttpServlet {
-
 /* *  list.html
 *  url: "/findMusic",
 *  type:"get",
@@ -33,20 +31,13 @@ public class FindMusicServlet extends HttpServlet {
         MusicDao musicDao = new MusicDao();
         List<Music> musicList = new ArrayList<>();
         if(musicName != null) {
-
             musicList = musicDao.ifMusic(musicName);  //根据关键字查询歌单
-
-
         }else {
             // 如果 musicName == null ,则查询所有
             musicList = musicDao.findMusic();
         }
-        Map<String,Object> return_map = new HashMap<>();
-        return_map.put("msg",musicList);
         // musicList 中的内容返回给前端
         ObjectMapper mapper = new ObjectMapper();
-        mapper.writeValue(resp.getWriter(),return_map);// 2:36
-
-
+        mapper.writeValue(resp.getWriter(),musicList);
     }
 }
