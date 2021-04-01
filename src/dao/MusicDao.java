@@ -121,7 +121,7 @@ public class MusicDao {
      * a1:上传文件本身给服务器
      *a2:将音乐信息，插入到数据库当中，此时做的就是这一步
      */
-    public int Insert(String title, String singer, String time, String url,
+    public int insert(String title, String singer, String time, String url,
                       int userid) {
         Connection connection = null;
         PreparedStatement ps = null;

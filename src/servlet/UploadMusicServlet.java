@@ -44,8 +44,10 @@ public class UploadMusicServlet extends HttpServlet {
             }
             System.out.println("fileItems:" +fileItems);
             FileItem fileItem = fileItems.get(0);
-            System.out.println("fileItem" + fileItem);
+            System.out.println("fileItem: " + fileItem);
             String fileName = fileItem.getName(); // 文件名
+            req.getSession().setAttribute("fileName",fileName); // 将fileName 写入session中
+
             try {
                 fileItem.write(new File(SAVEPATH, fileName));
             } catch (Exception e) {
@@ -54,7 +56,6 @@ public class UploadMusicServlet extends HttpServlet {
             }
             // 2.上传到数据库中
             resp.sendRedirect("uploadsucess.html");
-
         }
 
     }
