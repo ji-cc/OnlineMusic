@@ -156,7 +156,7 @@ public class MusicDao {
     /**
      * 删除歌曲：
      */
-    public  int deleteMusicById(int id) {
+    public int deleteMusicById(int id) {
         Connection connection = null;
         PreparedStatement ps = null;
        // ResultSet rs = null;    // 删除操作，不需要结果集

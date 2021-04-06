@@ -17,7 +17,7 @@ import java.util.Map;
 // 删除选中的音乐
 @WebServlet("/deleteSelMusicServlet")
 public class DeleteSelMusicServlet extends HttpServlet {
-    /*
+    /* list.html
     url:"/deleteSelMusicServlet",
                         //将id数组，发送给deleteSelectedServlet
                         data:{"id":id},

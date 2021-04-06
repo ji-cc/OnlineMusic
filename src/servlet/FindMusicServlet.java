@@ -3,7 +3,6 @@ package servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.MusicDao;
 import entity.Music;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+//根据关键字查询歌单
 
 // 加注解
 @WebServlet("/findMusic")

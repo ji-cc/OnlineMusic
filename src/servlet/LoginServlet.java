@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+// 登录
 // 加注解  url:"/loginServlet", 与前端代码相关联
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {

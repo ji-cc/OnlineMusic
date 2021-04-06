@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 // 删除歌曲
-
+// list.html
 @WebServlet("/deleteServlet")
 public class DeleteServlet extends HttpServlet {
     /*
