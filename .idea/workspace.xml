@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d634e0e-170a-4ac5-afbb-265729750e5f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/FindLoveMusicServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/RemoveLoveServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/MusicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/MusicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteSelMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/DeleteSelMusicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/FindMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/FindMusicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LoginServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="7d634e0e-170a-4ac5-afbb-265729750e5f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,12 +53,8 @@
       <file leaf-file-name="loveMusic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/loveMusic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="1830">
               <caret line="61" selection-start-line="61" selection-end-line="62" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -76,11 +62,8 @@
       <file leaf-file-name="RemoveLoveServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/RemoveLoveServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1170">
+              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -88,11 +71,8 @@
       <file leaf-file-name="FindMusicServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlet/FindMusicServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="39" column="54" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -100,11 +80,8 @@
       <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="56" column="55" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="56" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1680">
+              <caret line="56" column="55" selection-start-line="54" selection-start-column="8" selection-end-line="56" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -167,7 +144,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="42" />
     <option name="width" value="1346" />
     <option name="height" value="716" />
@@ -177,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,7 +212,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -250,7 +227,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.28981724" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -451,11 +428,12 @@
       <workItem from="1617262999148" duration="5656000" />
       <workItem from="1617519144753" duration="2841000" />
       <workItem from="1617605286358" duration="8233000" />
+      <workItem from="1617971607289" duration="1121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87064000" />
+    <option name="totallyTimeSpent" value="88185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +445,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="0" width="1346" height="716" extended-state="1" />
+    <frame x="42" y="0" width="1346" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -483,19 +461,19 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.17359856" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287037" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.09142857" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3287037" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3287037" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1352381" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1352381" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5601852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.530837" visible="true" weight="0.22107765" />
       <window_info anchor="bottom" id="Problems" order="7" weight="0.3287037" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.530837" visible="true" weight="0.2155309" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.09142857" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.43783784" />
@@ -507,10 +485,10 @@
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.2962963" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.43783784" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19809523" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.43783784" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24960381" />
       <window_info id="UI Designer" order="4" />
@@ -524,11 +502,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287037" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Problems" order="11" weight="0.3287037" />
+      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3287037" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3287037" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4959514" visible="true" weight="0.2155309" />
       <window_info anchor="right" id="Database" order="6" weight="0.2881356" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -757,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,9 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,9 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="316" column="10" lean-forward="true" selection-start-line="316" selection-start-column="10" selection-end-line="316" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,9 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,9 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240">
           <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,50 +847,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
           <caret line="28" column="20" selection-start-line="28" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/loveMusic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="1830">
           <caret line="61" selection-start-line="61" selection-end-line="62" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="56" column="55" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="56" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1680">
+          <caret line="56" column="55" selection-start-line="54" selection-start-column="8" selection-end-line="56" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/RemoveLoveServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1170">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/FindMusicServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="39" column="54" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
